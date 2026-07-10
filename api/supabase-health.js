@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     const env = {
       VITE_SUPABASE_URL: Boolean(import.meta.env.VITE_SUPABASE_URL),
       VITE_SUPABASE_ANON_KEY: Boolean(import.meta.env.VITE_SUPABASE_ANON_KEY),
-      VITE_SUPABASE_SERVICE_ROLE_KEY: Boolean(import.meta.env.VITE_SUPABASE_SERVICE_ROLE_KEY)
+      
     };
 
     const missing = Object.entries(env)
@@ -52,7 +52,10 @@ export default async function handler(req, res) {
       configured: {
         VITE_SUPABASE_URL: Boolean(import.meta.env.VITE_SUPABASE_URL),
         VITE_SUPABASE_ANON_KEY: Boolean(import.meta.env.VITE_SUPABASE_ANON_KEY),
-        VITE_SUPABASE_SERVICE_ROLE_KEY: Boolean(import.meta.env.VITE_SUPABASE_SERVICE_ROLE_KEY)
+      },
+      error: {
+        message: err.message,
+        stack: err.stack
       }
     });
   }

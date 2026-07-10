@@ -1,0 +1,21 @@
+<svg width="960" height="1280" viewBox="0 0 960 1280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Professional portrait placeholder for Santosh Panwar</title>
+  <desc id="desc">A premium corporate placeholder image with a navy gradient background and silhouette, intended to be replaced by a real professional headshot.</desc>
+  <rect width="960" height="1280" rx="48" fill="#0F172A"/>
+  <path d="M0 0H960V1280H0V0Z" fill="url(#paint0_radial_1_2)"/>
+  <path d="M-120 1014C91 827 238 850 412 955C586 1060 746 1069 1080 780V1280H-120V1014Z" fill="#1E3A5F" fill-opacity="0.65"/>
+  <circle cx="480" cy="402" r="178" fill="#E2E8F0"/>
+  <path d="M196 1012C224 803 340 668 480 668C620 668 736 803 764 1012C775 1094 712 1168 629 1168H331C248 1168 185 1094 196 1012Z" fill="#E2E8F0"/>
+  <path d="M290 956C336 873 405 830 480 830C555 830 624 873 670 956" stroke="#2563EB" stroke-width="36" stroke-linecap="round"/>
+  <rect x="124" y="104" width="224" height="52" rx="26" fill="white" fill-opacity="0.12"/>
+  <rect x="612" y="174" width="196" height="52" rx="26" fill="white" fill-opacity="0.1"/>
+  <rect x="124" y="1130" width="712" height="42" rx="21" fill="white" fill-opacity="0.12"/>
+  <text x="480" y="1215" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.86" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">Replace with Santosh Panwar headshot</text>
+  <defs>
+    <radialGradient id="paint0_radial_1_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(231 236) rotate(51.2602) scale(1157.69 868.945)">
+      <stop stop-color="#2563EB" stop-opacity="0.72"/>
+      <stop offset="0.44" stop-color="#1E3A5F" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#0F172A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

@@ -12,9 +12,9 @@ export default async function handler(req, res) {
 
   try {
     const env = {
-      NEXT_PUBLIC_SUPABASE_URL: Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL),
-      NEXT_PUBLIC_SUPABASE_ANON_KEY: Boolean(process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY),
-      SUPABASE_SERVICE_ROLE_KEY: Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY)
+      VITE_SUPABASE_URL: Boolean(import.meta.env.VITE_SUPABASE_URL),
+      VITE_SUPABASE_ANON_KEY: Boolean(import.meta.env.VITE_SUPABASE_ANON_KEY),
+      VITE_SUPABASE_SERVICE_ROLE_KEY: Boolean(import.meta.env.VITE_SUPABASE_SERVICE_ROLE_KEY)
     };
 
     const missing = Object.entries(env)
@@ -50,9 +50,9 @@ export default async function handler(req, res) {
       ok: false,
       message: err.message || 'Unable to reach Supabase.',
       configured: {
-        NEXT_PUBLIC_SUPABASE_URL: Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL),
-        NEXT_PUBLIC_SUPABASE_ANON_KEY: Boolean(process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY),
-        SUPABASE_SERVICE_ROLE_KEY: Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY)
+        VITE_SUPABASE_URL: Boolean(import.meta.env.VITE_SUPABASE_URL),
+        VITE_SUPABASE_ANON_KEY: Boolean(import.meta.env.VITE_SUPABASE_ANON_KEY),
+        VITE_SUPABASE_SERVICE_ROLE_KEY: Boolean(import.meta.env.VITE_SUPABASE_SERVICE_ROLE_KEY)
       }
     });
   }

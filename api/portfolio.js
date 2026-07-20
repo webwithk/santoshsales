@@ -20,7 +20,7 @@ export default async function handler(req, res) {
 
   try {
     console.log("SUPABASE URL:", process.env.VITE_SUPABASE_URL);
-    cosole.log("ANON KEY EXISTS:", !!process.env.VITE_SUPABASE_ANON_KEY);
+    console.log("ANON KEY EXISTS:", !!process.env.VITE_SUPABASE_ANON_KEY);
     if (req.method === 'GET') {
       const [profileRows, navItems, sections, stats, experience, timeline, reviews] = await Promise.all([
         queryOrThrow(

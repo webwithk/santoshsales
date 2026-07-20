@@ -79,6 +79,10 @@ export default async function handler(req, res) {
         )
       ]);
 
+      console.log("profileRows:",
+        JSON.stringify(profileRows, null, 2)
+      );
+
       const profile = profileRows?.[0] ?? null;
       if (!profile) {
         return res.status(404).json({ error: 'Portfolio profile not found.' });
